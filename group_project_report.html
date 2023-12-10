@@ -7660,7 +7660,8 @@ Making 'packages.html' ...
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-r"><pre><span></span><span class="c1"># demonstrate how the data is read into R and convert Risk (our classifier) as a factor</span>
-<span class="n">audit</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv</span><span class="p">(</span><span class="s">"audit_data/audit_risk.csv"</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nf">mutate</span><span class="p">(</span><span class="n">Risk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as_factor</span><span class="p">(</span><span class="n">Risk</span><span class="p">))</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://raw.githubusercontent.com/jennifertanojo/dsci-100-004-2023w1-group-43/main/audit_data/audit_risk.csv"</span>
+<span class="n">audit</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_csv</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="w"> </span><span class="o">|&gt;</span><span class="w"> </span><span class="nf">mutate</span><span class="p">(</span><span class="n">Risk</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">as_factor</span><span class="p">(</span><span class="n">Risk</span><span class="p">))</span>
 
 <span class="c1"># viewing the data as a table of the data</span>
 <span class="nf">head</span><span class="p">(</span><span class="n">audit</span><span class="p">)</span>
